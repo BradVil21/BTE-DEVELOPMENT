@@ -1,0 +1,283 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main, .content-wrapper, .container {
+  flex: 1 0 auto; /* Make main content area grow to fill space */
+}
+/* Fade-in effect on body */
+body {
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+/* Navbar styles */
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link.active {
+  color: white !important; /* Default color for navbar links */
+}
+
+ /* or any hover color you like */
+
+.custom-navbar {
+  background-color: #282826 !important; /* white background */
+  padding: 10px 20px;
+  /* border-bottom: 1px solid white; subtle bottom border */
+}
+
+/* flipping logo */
+.logo-flip {
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: flip 3s linear infinite;
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* end of flipping logo */
+
+/* Social icons styling */
+.custom-navbar {
+  background-color: #000; /* black navbar */
+  padding: 10px 20px;
+  position: relative; /* needed for absolute inside */
+}
+
+.social-icons {
+  z-index: 1000; /* so it appears above everything */
+}
+
+.social-icon {
+  color: #fff; /* white icons */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ff5733; /* orange on hover */
+}
+
+/* Navbar toggler white for black bg */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-family: 'Anton SC', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 20px;
+    color: white;
+    font-size: 55px;
+}
+main h4 {
+    color: #2c3e50;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+}
+/* video section */
+.video-section {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* about section */
+.about-us-section {
+  color: white;
+}
+.about-us-section img:hover {
+  transform: scale(1.10);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* .about-title {
+  font-family: 'Anton SC', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+} */
+
+/* image gallery */
+.gallery-img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes each image a perfect square */
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #1b1b1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the box, cropping as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+
+.contact-section form input,
+.contact-section form textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-section form button {
+  border-radius: 8px;
+  font-weight: bold;
+}
+.custom-contact-btn {
+  background-color: #000 !important; /* Black */
+  color: #fff !important;            /* White text */
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-contact-btn:hover {
+  background-color: #333 !important; /* Slightly lighter black on hover */
+}
+
+
+/* footer section */
+.footer-section {
+  background-color: #1b1b1a;
+}
+.footer-testimonials {
+  background-color: #1b1b1a;
+  width: 100vw; /* full viewport width */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Contact HMTL */
+.faq-section {
+  background-color: #1b1b1a;
+}
+
+.accordion-button {
+  font-weight: bold;
+}
+.contact-section {
+  background-color: #282826;
+  color: white;
+}
+
+
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+  /* Mobile menu full width and right aligned below toggler */
+  /* Make hamburger lines white */
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  /* Mobile menu full width and right aligned below toggler */
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      width: 100%;
+      background-color: #282826;
+      padding: 1rem 1.5rem;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: auto;
+      z-index: 999;
+    }
+    .navbar-nav {
+      width: 100%;
+      text-align: right;
+      flex-direction: column !important; /* stack vertically */
+    }
+    .navbar-nav .nav-link {
+      width: 100%;
+      padding-left: 0;
+      color: white !important;
+      text-align: right;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  /* Large screens nav links horizontal, aligned right */
+  @media (min-width: 992px) {
+    .navbar-nav {
+      flex-direction: row !important; /* horizontal */
+    }
+    .navbar-nav .nav-link {
+      white-space: nowrap; /* no wrap */
+      padding-left: 1rem;
+      padding-right: 1rem;
+      color: white;
+    }
+  }
+  
+  #confirmation {
+  text-align: center;
+}
+
+
+
+
+

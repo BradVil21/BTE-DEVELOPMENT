@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Bring That Energy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body style= "background-color: #282826; color: white;">
+
+    <div class="attention-bar text-center text-white py-2">
+  Exclusive Clothing Drop Coming Soon
+</div>
+
+<nav class="navbar navbar-expand-lg custom-navbar position-relative" style="background-color: #282826;">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <!-- Left: Logo flip -->
+    <a href="HTML FILE.html" class="d-flex align-items-center" style="flex: 0 0 auto;">
+      <div class="logo-flip">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="Images/BTELOGO.PNG" alt="Logo" width="150" height="150" />
+          </div>
+          <div class="flip-back">
+            <img src="Images/BTELOGO.PNG" alt="Logo" width="150" height="150" />
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Right: Nav links + toggler -->
+    <div class="d-flex align-items-center" style="flex: 0 0 auto;">
+      <button
+        class="navbar-toggler me-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="HTML FILE.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.sweatpals.com/host/bringthatenergy" target="_blank">Upcoming Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Centered social icons absolutely positioned -->
+  <div class="social-icons position-absolute top-50 start-50 translate-middle">
+    <a href="https://www.instagram.com/bteclub/" target="_blank" class="mx-3 social-icon"><i class="bi bi-instagram fs-3 text-white"></i></a>
+    <a href="https://www.youtube.com/@BTE_CLUB" target="_blank" class="mx-3 social-icon"><i class="bi bi-youtube fs-3 text-white"></i></a>
+    <a href="https://www.tiktok.com/@bterunclub_" target="_blank" class="mx-3 social-icon"><i class="bi bi-tiktok fs-3 text-white"></i></a>
+  </div>
+</nav>
+
+<main class="content-wrapper">
+  <div class="container py-5">
+    <h1 class="text-center mb-5">What People Are Saying</h1>
+
+    <!-- Testimonials -->
+<div class="row g-4 mb-5" id="testimonials-container"> 
+  <div class="col-md-4">
+    <div class="card text-dark h-100">
+      <div class="card-body">
+        <p class="card-text"><strong>"Joining BTE changed my life! The energy is unmatched."</strong></p>
+        <h6 class="card-subtitle mt-3 text-muted">— Jaylen S.</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-dark h-100">
+      <div class="card-body">
+        <p class="card-text"><strong>"The best community I’ve ever been part of. Real love and motivation."</strong></p>
+        <h6 class="card-subtitle mt-3 text-muted">— Briana M.</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-dark h-100">
+      <div class="card-body">
+        <p class="card-text"><strong>"It’s not just workouts. It’s healing, energy, and family."</strong></p>
+        <h6 class="card-subtitle mt-3 text-muted">— Malik D.</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Submit a Testimonial -->
+<h2 class="text-center mb-4">Share Your Experience</h2>
+<p class="text-center mb-4">Fill out the content below for a chance to be shown on this page</p>
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <form action="https://formspree.io/f/xrbkwevd" method="POST" id="testimonialForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" name="name" class="form-control" required placeholder="Your Name" />
+      </div>
+      <div class="mb-3">
+        <label for="testimonial" class="form-label">Your Testimonial</label>
+        <textarea name="testimonial" class="form-control" rows="4" required placeholder="Share your experience..."></textarea>
+      </div>
+      <button type="submit" class="btn w-100" style="background-color: black; color: white;">
+        <strong>Send Testimonial</strong>
+      </button>
+      <div id="confirmation" class="text-success mt-3" style="display: none;">✓ Testimonial Sent!</div>
+    </form>
+  </div>
+</div>
+</div>
+</main>
+
+<!-- footer section-->
+
+<footer class="footer-section text-white py-4 mt-5" style="background-color:#1b1b1a;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Section 1: Brand or Summary -->
+      <div class="col-md-4 mb-3">
+        <h5>BRING THAT ENERGY 
+          <img src="Images/BTELOGO.PNG" alt="Logo" width="100" height="100" />
+        </h5>
+        <p class="small">Empowering through movement, community, and energy.</p>
+      </div>
+
+      <!-- Section 2: Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#"  class="text-white text-decoration-none">Become an Ambassador</a></li>
+          <li><a href="https://www.sweatpals.com/host/bringthatenergy" target="_blank" class="text-white text-decoration-none">Upcoming Events</a></li>
+          <li><a href="testimonials.html" class="text-white text-decoration-none">Testimonials</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 3: Contact or Social -->
+      <div class="col-md-4 mb-3">
+        <h6>Follow Us</h6>
+        <a href="https://www.instagram.com/bteclub/" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@BTE_CLUB" target="_blank" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@bterunclub_" target="_blank" class="text-white"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center pt-3 border-top border-secondary mt-4">
+      <small>&copy; 2025 Bring That Energy. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Vapi Widget -->
+  <!-- <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+  <vapi-widget
+    public-key="57bcdd76-d2f5-43c2-af63-0fa2eedcb53c"
+    assistant-id="99f43d28-38f0-4894-bf90-c7b4be27e682"
+    mode="chat"
+    theme="light"
+  ></vapi-widget> -->
+
+  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-...your-integrity-hash..." crossorigin="anonymous"></script>
+</body>
+</html>

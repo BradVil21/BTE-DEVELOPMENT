@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Bring That Energy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body style= "background-color: #282826; color: white;">
+
+    <div class="attention-bar text-center text-white py-2">
+  Exclusive Clothing Drop Coming Soon
+</div>
+
+<nav class="navbar navbar-expand-lg custom-navbar position-relative" style="background-color: #282826;">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <!-- Left: Logo flip -->
+    <a href="HTML FILE.html" class="d-flex align-items-center" style="flex: 0 0 auto;">
+      <div class="logo-flip">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="Images/BTELOGO.PNG" alt="Logo" width="150" height="150" />
+          </div>
+          <div class="flip-back">
+            <img src="Images/BTELOGO.PNG" alt="Logo" width="150" height="150" />
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Right: Nav links + toggler -->
+    <div class="d-flex align-items-center" style="flex: 0 0 auto;">
+      <button
+        class="navbar-toggler me-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="HTML FILE.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.sweatpals.com/host/bringthatenergy" target="_blank">Upcoming Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Centered social icons absolutely positioned -->
+  <div class="social-icons position-absolute top-50 start-50 translate-middle">
+    <a href="https://www.instagram.com/bteclub/" target="_blank" class="mx-3 social-icon"><i class="bi bi-instagram fs-3 text-white"></i></a>
+    <a href="https://www.youtube.com/@BTE_CLUB" target="_blank" class="mx-3 social-icon"><i class="bi bi-youtube fs-3 text-white"></i></a>
+    <a href="https://www.tiktok.com/@bterunclub_" target="_blank" class="mx-3 social-icon"><i class="bi bi-tiktok fs-3 text-white"></i></a>
+  </div>
+</nav>
+
+
+  <!-- Contact Us Section-->
+<section class="contact-section py-5" id="contact">
+  <div class="container text-center">
+    <h2 class="mb-5">Contact Us</h2>
+    <div class="row justify-content-center">
+
+      <!-- Contact Info -->
+      <div class="col-md-5 mb-4">
+        <h5>Get in Touch</h5>
+        <p>If you have any questions, want to collaborate, or just want to bring the energy — reach out!</p>
+        <ul class="list-unstyled">
+          <li><strong>Email:</strong> bterunclub@gmail.com</li>
+          <li><strong>Location:</strong> Fort Lauderdale, FL</li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-6">
+<form action="https://formspree.io/f/mgvyjozp" method="POST">
+  <div class="mb-3 text-start">
+    <label for="name" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+  </div>
+  <div class="mb-3 text-start">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" required placeholder="name@example.com">
+  </div>
+  <div class="mb-3 text-start">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+  </div>
+  <button type="submit" class="btn custom-contact-btn w-100">Send Message</button>
+  <div id="confirmation" class="mt-3 text-success" style="display:none;">
+    &#10003; Message sent!
+  </div>
+</form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--FAQ Section-->
+<section class="faq-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1-heading">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+            What is BTE Club all about?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            BTE Club stands for "Bring That Energy" — we’re a community-powered fitness movement focused on culture, energy, and inclusivity.
+            See the <strong>"About Us"</strong> section for more details.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            How can I join an event?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can view and join events heading to the <strong>"Upcoming Events"</strong> tab located in the navigation section above.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            How do I become a BTE ambassador?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            DM us on Instagram or email us at bterunclub@gmail.com and we'll send you the ambassador application form.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- footer section-->
+
+<footer class="footer footer-section text-white py-4 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Section 1: Brand or Summary -->
+      <div class="col-md-4 mb-3">
+        <h5>BRING THAT ENERGY <img src="Images/BTELOGO.PNG" alt="Logo" width="100" height="100" /></h5>
+        <p class="small">Empowering through movement, community, and energy.</p>
+      </div>
+
+      <!-- Section 2: Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Become an Ambassador</a></li>
+          <li><a href="https://www.sweatpals.com/host/bringthatenergy" target="_blank" class="text-white text-decoration-none">Upcoming Events</a></li>
+          <li><a href="testimonials.html" class="text-white text-decoration-none">Testimonials</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 3: Contact or Social -->
+      <div class="col-md-4 mb-3">
+        <h6>Follow Us</h6>
+        <a href="https://www.instagram.com/bteclub/" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@BTE_CLUB" target="_blank" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@bterunclub_" target="_blank" class="text-white"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center pt-3 border-top border-secondary mt-4">
+      <small>&copy; 2025 Bring That Energy. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Vapi Widget -->
+  <!-- <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+  <vapi-widget
+    public-key="57bcdd76-d2f5-43c2-af63-0fa2eedcb53c"
+    assistant-id="99f43d28-38f0-4894-bf90-c7b4be27e682"
+    mode="chat"
+    theme="light"
+  ></vapi-widget> -->
+
+  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-...your-integrity-hash..." crossorigin="anonymous"></script>
+</body>
+</html>
